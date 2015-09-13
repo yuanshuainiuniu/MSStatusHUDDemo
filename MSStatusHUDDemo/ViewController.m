@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MSStatusBarHUD.h"
 
 @interface ViewController ()
 
@@ -17,11 +18,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor blueColor];
+}
+- (IBAction)top:(id)sender {
+    [MSStatusBarHUD showNewMessage:@"我从上边进来" from:Top];
+}
+- (IBAction)left:(id)sender {
+    [MSStatusBarHUD showNewMessage:@"我从右边进来不能吧没几何画板还好进来不能吧没几何画板还好进来不能吧没几何画板还好吧就不回家几何画板保护环境" from:left];
+}
+- (IBAction)right:(id)sender {
+    [MSStatusBarHUD showNewMessage:@"我从上边进来" from:right];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
 }
-
 @end

@@ -14,6 +14,7 @@
 		72BD020D1B7DFB99002FE594 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72BD020C1B7DFB99002FE594 /* Images.xcassets */; };
 		72BD02101B7DFB99002FE594 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72BD020E1B7DFB99002FE594 /* LaunchScreen.xib */; };
 		72BD021C1B7DFB9A002FE594 /* MSStatusHUDDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BD021B1B7DFB9A002FE594 /* MSStatusHUDDemoTests.m */; };
+		72BD02271B7DFBA7002FE594 /* MSStatusBarHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BD02261B7DFBA7002FE594 /* MSStatusBarHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		72BD02151B7DFB9A002FE594 /* MSStatusHUDDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MSStatusHUDDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72BD021A1B7DFB9A002FE594 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72BD021B1B7DFB9A002FE594 /* MSStatusHUDDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSStatusHUDDemoTests.m; sourceTree = "<group>"; };
+		72BD02251B7DFBA7002FE594 /* MSStatusBarHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSStatusBarHUD.h; sourceTree = "<group>"; };
+		72BD02261B7DFBA7002FE594 /* MSStatusBarHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSStatusBarHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 		72BD01FE1B7DFB99002FE594 /* MSStatusHUDDemo */ = {
 			isa = PBXGroup;
 			children = (
+				72BD02251B7DFBA7002FE594 /* MSStatusBarHUD.h */,
+				72BD02261B7DFBA7002FE594 /* MSStatusBarHUD.m */,
 				72BD02031B7DFB99002FE594 /* AppDelegate.h */,
 				72BD02041B7DFB99002FE594 /* AppDelegate.m */,
 				72BD02061B7DFB99002FE594 /* ViewController.h */,
@@ -220,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				72BD02081B7DFB99002FE594 /* ViewController.m in Sources */,
+				72BD02271B7DFBA7002FE594 /* MSStatusBarHUD.m in Sources */,
 				72BD02051B7DFB99002FE594 /* AppDelegate.m in Sources */,
 				72BD02021B7DFB99002FE594 /* main.m in Sources */,
 			);
@@ -348,6 +354,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MSStatusHUDDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -358,6 +365,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MSStatusHUDDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
