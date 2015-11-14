@@ -19,6 +19,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor = [UIColor blueColor];
+    NSLog(@"添加了log----");
 }
 - (IBAction)top:(id)sender {
     [MSStatusBarHUD showNewMessage:@"我从上边进来" from:Top];
